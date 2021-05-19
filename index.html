@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Uwe Gilbers">
+    <meta name="description" content="Portfolio Uwe Gilbers">
+    <meta name="keywords" content="Design, Grafikdesign, Flyer, Internetseite, CSS, Javascript,">
+    <title>Uwe Gilbers | Webdesign, Flyer + Printmedien</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="full-height text-center text-light">
+        <div class="container container--narrow">
+            <h1 class="mainline">Ich mache Designs für Netz + Print!</h1>
+            <h2>Designer + Front End Entwickler</h2>
+        </div>
+    </header>
+
+    <section class="text-dark text-center">
+        <div class="container">
+            <h2 data-aos="fade-in">Angebot</h2>
+            <div class="split">
+                <div data-aos="fade-up" data-aos-duration="1500">
+                    <h3>Webdesign</h3>
+                    <p>Ein Portfolio, ein dynamischer Blog für deine Bilder oder ein stimmiges Design für deine Geschäftsidee.</p>
+                </div>
+                <div data-aos="fade-left" data-aos-duration="2000">
+                    <h3>Design Printmedien</h3>
+                    <p>Tempora obcaecati rem perspiciatis accusantium itaque facere, aliquid quidem maiores consectetur
+                        eius ipsa nam reprehenderit at asperiores officia quia voluptatibus ullam facilis. Nemo,
+                        repudiandae dolore.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gradient text-light" data-aos="fade-up">
+        <div class="container">
+            <div class="split">
+                <div>
+                    <h2>Front End Entwicklung</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Erfahrung mit CMS Wordpress & Shopify</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Design für Printmedien</h2>
+                    <ul>
+                        <li>Adobe Photoshop & Illustrator</li>
+                        <li>Affinity Suite mit Photo/Designer/Publisher</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="text-dark text-center">
+        <div class="container" data-aos="zoom-in">
+            <h2>Schreib mir doch einfach eine Email:</h2>
+            <div class="split">
+                <div>
+                    <h3><a class="" href="mailto:uwe.gilbers@gmail.com?subject=Mail von Website">uwe.gilbers@gmail.com</a></h3>
+                    <a class="" href="mailto:uwe.gilbers@gmail.com?subject=Mail von Website"><button class="btn btn-1"  type="button">Mail senden</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-light">
+        <section class="bg-footer text-center">
+            <div class="container">
+                    <div>
+                        <address>
+                            Uwe Gilbers
+                            26556 Westerholt
+                        </address>
+                    </div>
+                    <p class="text-center">&copy; <span id="copyright-year">2020</span> &#9918;<a class="link-light" href="mailto:uwe.gilbers@gmail.com?subject=Mail von Website">Uwe Gilbers</a></p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+            document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+
+
+                AOS.init({
+                offset: 300,
+                duration: 1000,
+                once: true
+                });
+    </script>
+
+</body>
+</html>

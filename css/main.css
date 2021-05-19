@@ -1,0 +1,210 @@
+@import url(normalize.css);
+
+:root {
+    --clr-primary: hsl(214, 98%, 19%);
+    --clr-secondary: hsl(205, 58%, 52%);
+    --clr-special: hsl(131, 32%, 62%);
+    --clr-link: hsl(353, 75%, 24%);
+    --clr-crazy: hsl(40, 89%, 55%);
+    --clr-swap: hsl(0, 0%, 100%);
+
+    --ff-primary: 'Ubuntu', sans-serif;
+    --ff-headline: 'Ubuntu', sans-serif;
+    --ff-accent: 'Permanent Marker', cursive;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/code.jpg');
+    /*background-image: url("../img/code.jpg");*/
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header,
+section {
+    padding: 4rem 0;
+}
+
+@media (min-width: 40rem) {
+
+    header,
+    section {
+        padding: 7rem 0;
+    }
+}
+
+.container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+}
+
+.container--narrow {
+    max-width: 30rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 45em) {
+    .split {
+        flex-direction: row;
+    }
+
+    .split>* {
+        flex-basis: 100%;
+    }
+
+    .split>*+* {
+        margin-left: 2em;
+    }
+}
+
+.mainline {
+    font-family: var(--ff-accent);
+    font-size: 5rem;
+    letter-spacing: 0.1rem;
+    color: var(--clr-crazy);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--ff-headline);
+    font-weight: 900;
+    ;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+.bg-primary {
+    background-color: var(--clr-primary);
+}
+
+.bg-secondary {
+    background-color: var(--clr-secondary);
+}
+
+.bg-special {
+    background-color: var(--clr-special);
+}
+
+.bg-footer {
+    background-image: url("../img/green.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bg-gradient {
+    background: rgb(4, 8, 31);
+    background: linear-gradient(176deg, rgba(4, 8, 31, 1) 0%, rgba(12, 220, 241, 1) 100%);
+}
+
+
+
+.text-light {
+    color: var(--clr-swap);
+}
+
+.text-dark {
+    color: var(--clr-primary);
+}
+
+.text-center {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--clr-link);
+}
+
+.link-light {
+    text-decoration: none;
+    color: var(--clr-special)
+}
+
+.hero {
+    background-color: var(--clr-primary);
+}
+
+.full-height {
+    min-height: 100vh;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* List styles */
+
+ul {
+    list-style: none;
+
+}
+
+ul li::before {
+    font-size: 1.5rem;
+    content: "\272F";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var("--clr-special");
+    /* Change the color */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -0.5em;
+    /* Also needed for space (tweak if needed) */
+}
+
+/* Buttons */
+
+button {
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    padding: 20px 35px;
+    margin: 15px auto;
+    font-family: var(--ff-primary);
+    color: var(--clr-swap);
+    background-color: var(--clr-primary);
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/* Button 1 */
+.btn-1 {
+    background: var("--clr-primary");
+    color: #fff;
+}
+
+.btn-1:hover {
+    background: #2e6b94;
+}
+
+.btn-1:active {
+    background: #3aa9f3;
+    top: 2px;
+}
