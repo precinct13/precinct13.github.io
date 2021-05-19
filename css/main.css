@@ -103,13 +103,6 @@ h3 {
     background-repeat: no-repeat;
 }
 
-.bg-gradient {
-    background: rgb(4, 8, 31);
-    background: linear-gradient(176deg, rgba(4, 8, 31, 1) 0%, rgba(12, 220, 241, 1) 100%);
-}
-
-
-
 .text-light {
     color: var(--clr-swap);
 }
@@ -207,4 +200,14 @@ button {
 .btn-1:active {
     background: #3aa9f3;
     top: 2px;
+}
+
+footer {
+    padding: 10 10 0 0;
+    margin: 10 10 0 0;
+}
+
+img {
+    height: 100%;
+    width: 100%;
 }
