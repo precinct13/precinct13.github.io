@@ -27,6 +27,11 @@ header {
     background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 800px) {
+    body {
+      background-attachment: scroll;
+    }
+
 header,
 section {
     padding: 4rem 0;
