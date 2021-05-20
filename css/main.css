@@ -24,6 +24,7 @@ header {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/code.jpg');
     /*background-image: url("../img/code.jpg");*/
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -95,6 +96,11 @@ h3 {
 
 .bg-special {
     background-color: var(--clr-special);
+}
+
+.bg-gradient {
+    background: rgb(1,41,95);
+    background: linear-gradient(176deg, rgba(1,41,95,1) 0%, rgba(107,15,26,1) 100%); 
 }
 
 .text-light {
