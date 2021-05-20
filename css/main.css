@@ -2,10 +2,10 @@
 
 :root {
     --clr-primary: hsl(214, 98%, 19%);
-    --clr-secondary: hsl(205, 58%, 52%);
+    --clr-secondary: hsl(202, 28%, 22%);
     --clr-special: hsl(131, 32%, 62%);
-    --clr-link: hsl(353, 75%, 24%);
-    --clr-crazy: hsl(40, 89%, 55%);
+    --clr-link: hsl(323, 72%, 24%);
+    --clr-crazy: hsl(40, 89%, 22%);
     --clr-swap: hsl(0, 0%, 100%);
 
     --ff-primary: 'Ubuntu', sans-serif;
@@ -16,7 +16,7 @@
 body {
     font-family: var(--ff-primary);
     font-weight: 400;
-    font-size: 1.3125rem;
+    font-size: 1.3122rem;
     line-height: 1.6;
 }
 
@@ -43,7 +43,7 @@ section {
 
 .container {
     margin-inline: auto;
-    width: min(90%, 70.5rem);
+    width: min(90%, 70.2rem);
 }
 
 .container--narrow {
@@ -55,7 +55,7 @@ section {
     flex-direction: column;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 42em) {
     .split {
         flex-direction: row;
     }
@@ -71,7 +71,7 @@ section {
 
 .mainline {
     font-family: var(--ff-accent);
-    font-size: 5rem;
+    font-size: 2rem;
     letter-spacing: 0.1rem;
     color: var(--clr-crazy);
 }
@@ -99,8 +99,8 @@ h3 {
 }
 
 .bg-gradient {
-    background: rgb(1,41,95);
-    background: linear-gradient(176deg, rgba(1,41,95,1) 0%, rgba(107,15,26,1) 100%); 
+    background: rgb(1,41,92);
+    background: linear-gradient(176deg, rgba(1,41,92,1) 0%, rgba(107,12,26,1) 100%); 
 }
 
 .text-light {
@@ -134,7 +134,7 @@ a {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /* List styles */
@@ -145,7 +145,7 @@ ul {
 }
 
 ul li::before {
-    font-size: 1.5rem;
+    font-size: 2rem;
     content: "\272F";
     /* Add content: \2022 is the CSS Code/unicode for a bullet */
     color: var("--clr-special");
@@ -154,7 +154,7 @@ ul li::before {
     /* Needed to add space between the bullet and the text */
     width: 1em;
     /* Also needed for space (tweak if needed) */
-    margin-left: -0.5em;
+    margin-left: -0.2em;
     /* Also needed for space (tweak if needed) */
 }
 
@@ -164,8 +164,8 @@ button {
     text-transform: uppercase;
     cursor: pointer;
     border: none;
-    padding: 20px 35px;
-    margin: 15px auto;
+    padding: 20px 32px;
+    margin: 12px auto;
     font-family: var(--ff-primary);
     color: var(--clr-swap);
     background-color: var(--clr-primary);
@@ -201,4 +201,12 @@ button {
     background: #3aa9f3;
     top: 2px;
 }
+
+
+
+.icons {
+    margin-left: 0.7em;
+    margin-top: 1em;
+ }
+
 
