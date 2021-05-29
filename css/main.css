@@ -110,6 +110,13 @@ h3 {
     background: linear-gradient(176deg, rgba(1,41,92,1) 0%, rgba(107,12,26,1) 100%); 
 }
 
+.bg-image {
+    background-image: url(../img/pencils.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .text-light {
     color: var(--clr-swap);
 }
