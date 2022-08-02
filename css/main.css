@@ -273,7 +273,7 @@ input,
 textarea {
     color: var(--clr-primary);
     display: block;
-    width: 500px;
+    width: 100%;
     margin-top: 1em;
     padding: 0%;
     border: 0;
