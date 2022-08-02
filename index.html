@@ -27,14 +27,14 @@
         </div>
     </header>
 
-    <section class="text-dark">
+    <section class="text-dark" data-aos="fade-up">
         <div class="container">
             <div class="split">
                 <div>
                     <h3>Web- & Printdesign</h3>
                     <p>Ein Portfolio, ein dynamischer Blog für deine Bilder oder ein stimmiges Design für deine Geschäftsidee.</p>
                 </div>
-                <div>
+                <div class="imagebox">
                     <img src="img/draw.jpg" alt="Drawing of Website with a Pen & a mobile phone.">
                 </div>
             </div>
@@ -44,8 +44,8 @@
     <section class="bg-gradient text-light" data-aos="fade-up">
         <div class="container">
             <div class="split">
-                <div class="imagery">
-                    <img src="img/monitor-with-code.jpg" alt="Monitor which displays some PHP">
+                <div class="imagebox">
+                    <img class="fill" src="img/code.png" alt="Monitor which displays some PHP">
                 </div>
                 <div>
                     <h2>Front End Entwicklung</h2>
@@ -53,7 +53,7 @@
                         <li><i class="fab fa-html5 fa-1x icons"></i> HTML</li>
                         <li><i class="fab fa-css3 fa-1x icons"></i> CSS</li>
                         <li><i class="fab fa-js fa-1x icons"></i> Javascript</li>
-                        <li><i class="fab fa-wordpress fa-1x icons"></i> Erfahrung mit CMS Wordpress</li>
+                        <li><i class="fab fa-wordpress fa-1x icons"></i> Wordpress</li>
                     </ul>
                 </div>
             </div>
@@ -102,13 +102,14 @@
 
     <section class="text-dark text-center">
         <div class="container" data-aos="zoom-in">
-            <h2>Schreib mir doch einfach eine Email:</h2>
-            <div class="split">
-                <div>
-                    <h3><a class="" href="mailto:uwe.gilbers@gmail.com?subject=Mail von Website">uwe.gilbers@gmail.com</a></h3>
-                    <a class="" href="mailto:uwe.gilbers@gmail.com?subject=Mail von Website"><button class="btn btn-1"  type="button">Mail senden</button></a>
-                </div>
-            </div>
+            <h2>Schreib mir</h2>
+            <form id="contact-form" action="https://formspree.io/f/xbjbrkyn" method="post">
+            <input type="text" placeholder="Dein Name" name="name" required><br>
+            <input type="email" placeholder="Deine Email-Adresse" name="email" id="Email" required><br>
+            <input  type="url" placeholder="Deine Website (optional)" name="url"><br>
+            <textarea id="nachricht" placeholder="Deine Nachricht..." name="message" rows="4" cols="40" required></textarea><br>
+            <input type="submit" value="Nachricht senden">
+            </form>
         </div>
     </section>
 
