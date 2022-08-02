@@ -257,7 +257,6 @@ input[type=button], input[type=submit], input[type=reset] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    transition: transform .2s; /* Animation */
   }
 
 input:hover[type=button], input:hover[type=submit], input:hover[type=reset] {
@@ -268,12 +267,10 @@ input:hover[type=button], input:hover[type=submit], input:hover[type=reset] {
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
-    transform: scale(1.1);
   }
 
 input,
 textarea {
-    background-color: aqua;
     color: var(--clr-primary);
     display: block;
     width: 100%;
@@ -282,9 +279,12 @@ textarea {
     border: 0;
 	border-bottom: 1px solid rgba(29, 1, 105, 0.7);
 	font-size: 1.2em;
-    background: transparent;
 }
 
-input:focus[type=text], textarea:focus {
+input:focus[type=text] {
+    background-color: rgb(187, 233, 236);
+  }
+
+textarea:focus {
     background-color: rgb(187, 233, 236);
   }
