@@ -83,6 +83,13 @@ section {
     color: var(--clr-crazy);
 }
 
+.mainline2 {
+    font-family: var(--ff-accent);
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: var(--clr-primary);
+}
+
 h1,
 h2,
 h3 {
@@ -112,7 +119,8 @@ h3 {
 }
 
 .bg-image {
-    background-image: url(../img/bg-texture.jpg);
+    background-image: url(../img/bg-keyboard.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,12 +163,21 @@ p {
 /* List styles */
 
 ul {
+    padding-left: 5%;
+    font-size: 1.7rem;
+
+}
+
+ul.languages {
     font-size: 1.7rem;
     list-style: none;
     padding-left: 0%;
 
 }
 
+.offset {
+    margin-left: 40%;
+}
 
 
 /* Buttons  */
@@ -280,11 +297,3 @@ textarea {
 	border-bottom: 1px solid rgba(29, 1, 105, 0.7);
 	font-size: 1.2em;
 }
-
-input:focus[type=text] {
-    background-color: rgb(187, 233, 236);
-  }
-
-textarea:focus {
-    background-color: rgb(187, 233, 236);
-  }
