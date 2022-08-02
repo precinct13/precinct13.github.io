@@ -252,25 +252,28 @@ footer {
 input[type=button], input[type=submit], input[type=reset] {
     background: var(--clr-primary);
     border: none;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    transition: transform .2s; /* Animation */
   }
 
 input:hover[type=button], input:hover[type=submit], input:hover[type=reset] {
     background-color: #4711da;
     border: none;
-    background: #2e6b94;
+    background: #083c5e;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    transform: scale(1.1);
   }
 
 input,
 textarea {
+    background-color: aqua;
     color: var(--clr-primary);
     display: block;
     width: 100%;
@@ -281,3 +284,7 @@ textarea {
 	font-size: 1.2em;
     background: transparent;
 }
+
+input:focus[type=text], textarea:focus {
+    background-color: rgb(187, 233, 236);
+  }
