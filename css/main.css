@@ -175,9 +175,7 @@ ul.languages {
 
 }
 
-.offset {
-    margin-left: 40%;
-}
+
 
 
 /* Buttons  */
@@ -223,8 +221,6 @@ button {
     background: #3aa9f3;
     top: 2px;
 }
-
-
 
 .icons {
     margin-left: 0.7em;
