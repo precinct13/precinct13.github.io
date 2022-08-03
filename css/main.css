@@ -59,7 +59,7 @@ section {
 }
 
 .container--narrow {
-    max-width: 30rem;
+    max-width: 35rem;
 }
 
 .split {
@@ -184,7 +184,7 @@ ul.languages {
     font-family: var(--ff-headline);
     font-size: 1.5rem;
     list-style: none;
-    padding-left: 0%;
+    padding-left: auto;
 }
 
 /* Buttons  */
