@@ -353,12 +353,3 @@ textarea {
   progress {
     color: #F70;
 }
-progress::-webkit-progress-bar {
-
-}
-progress::-webkit-progress-value {
-
-}
-progress:after {
-
-}
