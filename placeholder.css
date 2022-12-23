@@ -1,0 +1,13 @@
+ul li::before {
+
+    content: "\272F";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var("--clr-special");
+    /* Change the color */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -0.2em;
+    /* Also needed for space (tweak if needed) */
+}
