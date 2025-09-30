@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Uwe Gilbers">
+    <meta name="description" content="Portfolio Uwe Gilbers">
+    <meta name="keywords" content="Design, Grafikdesign, Flyer, Internetseite, CSS, Javascript,">
+    <title>Uwe Gilbers | Webdesign, Flyer + Printmedien</title>
+
+    <!--
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:ital,wght@0,400;1,700&display=swap" rel="stylesheet"> -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:wght@900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/abec23e884.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="full-height text-center text-light">
+        <div class="container container--narrow">
+            <h1 class="mainline">Ich mache Designs für Netz + Print!</h1>
+            <h2>Designer + Front End Entwickler</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="text-dark" data-aos="fade-up">
+            <div class="container">
+                <div class="split">
+                    <div>
+                        <h1>Impressum</h1>
+
+                        <address>Designer | Front End Entwickler <br>
+                            Gilbers, Uwe <br>
+                            Gartenstraße 22 <br>
+                            26556 Westerholt <br>
+                            uwe.gilbers@gmail.com <br>
+                            </address>
+                    </div>
+                    <div>
+                        <img src="img/draw.jpg" alt="Drawing of Website with a Pen & a mobile phone.">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <section class="text-center text-light">
+            <div class="container">
+                <div>
+                    <address>
+                    </address>
+                </div>
+
+                <div class="link-light">
+                    <p>&copy; Copyright <span id="copyright-year"></span> Alle Rechte vorbehalten. <br> &#9918;
+                        <a class="link-light" href="mailto:uwe.gilbers@gmail.com?subject=Mail von Website">Uwe
+                            Gilbers</a> | <a class="link-light" href="imprint.html">Impressum</a></p>
+
+                    <a class="link-light" href="https://github.com/precinct13" target="_blank"><i
+                            class="fab fa-github fa-2x"></i></a> <a class="link-light" href="" target="_blank"><i
+                            class="fab fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        document.querySelector('#copyright-year').innerText = new Date().getFullYear();
+
+
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+
+</body>
+
+</html>
