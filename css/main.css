@@ -47,7 +47,7 @@ header {
 
 header,
 section {
-    padding: 3rem 0;
+    padding: 10rem 0;
 }
 
 @media (min-width: 40rem) {
