@@ -52,8 +52,7 @@ section {
 
 @media  (max-width: 768px) {
 
-    header,
-    section {
+    header {
         padding: 15rem 0;
     }
 }
